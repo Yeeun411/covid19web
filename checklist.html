@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>자가문진표</title>
+    <meta charset = "utf-8">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<script>
+
+    function store() {
+	    sessionStorage.setItem(na.value, da.value, num.value, address.value);
+        alert(na.value + "님의 정보가 저장되었습니다.")
+}
+    var sum=0;
+    function calc(cBox) {
+        if(cBox.checked)
+            sum += 1;
+    }
+
+    function load(){
+        if (sum == 0)
+            window.location.href="sb1.html";
+        else
+            window.location.href="sb2.html";
+    }
+
+</script>
+
+<body>
+    <div class = "home">
+        <a href = "Untitled-1.html" class = "home_text"><h1><b>COVID 19</b></h1></a>
+    </div>
+<form >
+	<fieldset style="border-color:rgb(210, 220, 255);">
+        <legend style="text-align: center; text-shadow:2px 2px rgb(187, 187, 187);" ><h1><b>웹 자가 문진표</b></h1></legend>
+        <h3><b> i. 개인정보입력</b> </h3>
+        이름 : <input id="na" type="text" size="20" placeholder="김민수">
+        <br>
+        <br>
+        생년월일 : <input id="da" type="date" size="20">
+        <br>
+        <br>
+        연락처 : <input id="num" type="tel" size="20" placeholder="01012345678">
+        <br>
+        <br>
+        주소 : <input id="address" type="text" size="20" placeholder="서울특별시 광진구 OO로 OO아파트 101동 101호">
+        <br>
+        <br>
+        <button id ="save" onclick="store()">저장</button>
+        <br>
+        <br>
+        <hr style="border-color:rgb(210, 220, 255);">
+        <h3><b> ii. 문답표</b> </h3>
+        1. 최근 14일 이내에 확진자와 접촉한 적이 있다.<input type="checkbox" onclick="calc(this)">
+        <br>
+        <br>
+        2. 최근 14일 이내에 확진자가 방문한 곳을 방문한 적이 있다.<input type="checkbox" onclick="calc(this)">
+        <br>
+        <br>
+        3. 최근 아래 증상을 경험한 적이 있다.
+        <br>
+        <br>
+        발열<input type="checkbox" onclick="calc(this)"> 
+        기침<input type="checkbox" onclick="calc(this)">
+        가래<input type="checkbox"  onclick="calc(this)">
+        인후통<input type="checkbox" onclick="calc(this)">
+        두통<input type="checkbox"  onclick="calc(this)"> 
+        후각/미각 이상<input type="checkbox"  onclick="calc(this)">
+        오한<input type="checkbox" onclick="calc(this)">
+        근육통<input type="checkbox"  onclick="calc(this)">
+        호흡곤란<input type="checkbox"  onclick="calc(this)"> 
+        콧물,코막힘<input type="checkbox"  onclick="calc(this)">
+        설사<input type="checkbox" onclick="calc(this)">
+        구토<input type="checkbox" onclick="calc(this)">
+        복통<input type="checkbox"  onclick="calc(this)">
+        기타<input type="checkbox"  onclick="calc(this)">
+            <br>
+            <br>
+    </fieldset>
+</form>
+<br>
+<br>
+<div class = "sel"><button onclick="load(this)" width = "20px">제출</button></div>
+
+</body>
+</html>

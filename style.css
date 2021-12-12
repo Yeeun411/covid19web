@@ -1,0 +1,128 @@
+
+.home_text{
+    font-family: "Consolas";
+    font-size: 40px;
+    text-align: center;
+    text-shadow:4px 4px rgb(187, 187, 187);
+    color:rgb(103, 106, 255);
+    text-decoration: none;
+}
+.menu{
+    background: rgb(210, 220, 255);
+}
+.menu_text{
+    text-decoration: none;
+    font-family: "맑은 고딕";
+    font-size:18px;
+    color: rgb(68, 68, 68);
+    padding: 0px 60px
+
+
+}
+#nav{
+    list-style: none;
+    height:40px;
+    padding:0px 10px;
+    margin:0;
+
+}
+#nav li{
+    float:left;
+    position: relative;
+    margin: 5px 30px;
+    padding: 0;
+}
+#nav li a{
+    display:block;
+    font-family: "맑은 고딕";
+    font-size:18px;
+    color: rgb(68, 68, 68);
+    padding: 7px 8px;
+    margin: 0;
+    text-decoration: none;
+
+}
+#nav li:hover > a{
+    font-weight: bold;
+    margin:0;
+    padding:5px;
+}
+#nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 105px;
+    background:rgb(210, 220, 255);
+    text-align: center;
+    opacity:0;
+}
+#nav ul li{
+    float:none;
+    margin:0;
+    padding: 0;
+    font-size: 10px;
+}
+#nav ul a{
+    font-weight: normal;
+    color: black;
+}
+#nav ul li:hover a{
+    background: rgb(210, 220, 255);
+    font-weight: bold;
+}
+#nav li:hover ul{
+    opacity:1;
+}
+#nav li:hover ul li{
+    height:35px;
+    overflow: visible;
+    padding:0;
+}
+
+.image{
+    width: 90%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.info{
+    font-family: "Helvetica";
+    color: #585958;
+    text-decoration: none;
+}
+.image2{
+    width: 40%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.sel{
+    text-align: center;
+}
+#ak ul{    
+    text-align:center; 
+}
+#ak ul li a{
+     text-decoration: none;
+}
+table {
+    margin: auto;
+	border: 1px solid black;
+    border-collapse:collapse;
+    width: 1000px;
+    height: 150px;
+}
+td,th {
+    text-align: center;
+	border:1px solid black;
+}
+.ak h1{
+    text-shadow:1px 2px rgb(184, 184, 184);
+    color: rgb(148, 148, 255);
+}
+h2{
+    text-align: center;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>COVID 19</title>
+    <meta charset = "utf-8">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<script>
+    function load() {
+        var select = document.getElementById("site");
+        window.location=select.options[select.selectedIndex].value;
+    }
+    </script>
+<body>
+    <div class = "home">
+        <a href = "Untitled-1.html" class = "home_text"><h1><b>COVID 19</b></h1></a>
+    </div>
+  
+    <div class = "menu">
+      <hr>
+      <ul id ="nav">
+        <li><a>웹 자가문진표</a>
+            <ul>
+                <hr>
+                <li><a href = "checklist.html"> 검사용</a></li>
+                <hr>
+                <li><a href = "checklist2.html"> 확인용</a></li>
+                <hr>
+                </ul>
+                </li>
+        <li><a href = "vaccine.html" class = "menu_text">잔여백신예약</a></li>
+        <li><a href = "distancing.html" class = "menu_text">사회적 거리두기</a></li>
+        <li><a href = "news.html" class = "menu_text">코로나 관련 뉴스</a></li></ul>
+        <hr></div>
+    
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <script>
+        username = prompt("이름을 한번 더 입력해 주십시오.","");
+        document.write(username.big()+"님은".big())
+        </script>
+        <h3>코로나가 아닐 가능성이 높습니다.</h3>
+        <h3>하지만 검사를 원하신다면 주변 선별 진료소를 찾아주세요</h3>
+        <br>
+        <br>
+        <br>
+
+            <hr>     
+            <br>   
+            지역 선택 :
+            <select id="site">
+                <option value="https://www.seoul.go.kr/coronaV/coronaStatus.do?menu_code=03" selected>서울특별시
+                <option value="https://www.gwangju.go.kr/c19/contentsView.do?pageId=corona7">광주광역시
+                <option value="https://www.gg.go.kr/contents/contents.do?ciIdx=1145&menuId=2898">경기도
+                <option value="https://www.jeonbuk.go.kr/index.jeonbuk?menuCd=DOM_000000110005000000">전라북도
+                <option value="https://map.naver.com/v5/search/%EC%A0%9C%EC%A3%BC%20%EC%84%A0%EB%B3%84%EC%A7%84%EB%A3%8C%EC%86%8C?c=14075452.2087344,3952164.0916793,10,0,0,0,dh">제주특별자치도
+                <option value="https://www.busan.go.kr/covid19/Clinics.do">부산광역시
+                <option value="https://www.daejeon.go.kr/corona19/index.do?menuId=0005">대전광역시
+                <option value="http://www.provin.gangwon.kr/gw/portal/sub07_12_04_04">강원도
+                <option value="https://www.jeonnam.go.kr/contentsView.do?menuId=jeonnam0504150500">전라남도
+                <option value="http://covid19.daegu.go.kr/00936602.html">대구광역시
+                <option value="https://www.ulsan.go.kr/u/health/contents.ulsan?mId=001002006000000000">울산광역시
+                <option value="https://map.naver.com/v5/search/%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%84%A0%EB%B3%84%EC%A7%84%EB%A3%8C%EC%86%8C?c=14150884.3439745,4409232.4588930,8,0,0,0,dh">충청북도
+                <option value="https://gb.go.kr/Main/open_contents/section/wel/page.do?mnu_uid=5860&LARGE_CODE=360&MEDIUM_CODE=90&SMALL_CODE=40mnu_order=2">경상북도
+                <option value="https://map.naver.com/v5/search/%EC%9D%B8%EC%B2%9C%20%EC%84%A0%EB%B3%84%EC%A7%84%EB%A3%8C%EC%86%8C?c=14045131.9520478,4502851.1827651,8,0,0,0,dh">인천광역시
+                <option value="https://www.sejong.go.kr/covid19/sub03_01.do;jsessionid=Y6fWtki1Tkk918QCdmdG5Zmihu5zaaa1Yy0cXBYLzhSavICTpGFiVumJJ41CvesO.Portal_WAS2_servlet_engine5">세종특별자치시
+                <option value="https://map.naver.com/v5/search/%EC%B6%A9%EC%B2%AD%EB%82%A8%EB%8F%84%20%EC%84%A0%EB%B3%84%EC%A7%84%EB%A3%8C%EC%86%8C?c=14060744.0653536,4385902.0020775,8,0,0,0,dh">충청남도
+                <option value="http://xn--19-q81ii1knc140d892b.kr/EgovPageLink.do?menuNo=&link=sub%2Fcorona4">경상남도
+                </select>
+            <p>
+            <button onclick="load()" >웹 사이트 접속</button>
+            <br>
+            <br>
+            
+  
+
+    
+
+    
+    <div class = "menu">
+        <hr>    
+        <a href = "http://ncov.mohw.go.kr/" class = "menu_text">코로나19 공식사이트 바로가기</a>
+        <a href = "https://www.kdca.go.kr/index.es?sid=a2" class = "menu_text">중앙방역대책본부 바로가기</a>
+        <br>
+        <hr>
+
+</body>
+</html>
